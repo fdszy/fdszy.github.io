@@ -3,15 +3,15 @@
   <head>
 	<meta name="generator" content="Hugo 0.55.6" />
     <meta charset="utf-8">
-<title>famous try</title>
+<title>数据安全与隐私保护</title>
 
 
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="/reveal-js/css/reset.css">
-<link rel="stylesheet" href="/reveal-js/css/reveal.css"><link rel="stylesheet" href="/reveal-js/css/theme/black.css" id="theme">
-<link rel="stylesheet" href="/highlight-js/default.min.css">
+<link rel="stylesheet" href="/reveal-js/css/reveal.css"><link rel="stylesheet" href="/reveal-js/css/theme/night.css" id="theme">
+<link rel="stylesheet" href="/highlight-js/default.min.css"><link rel="stylesheet" href="/css/custom.css" id="custom_css">
     
   </head>
   <body>
@@ -21,13 +21,169 @@
 
     <section>
 
-<h1 id="hey">hey</h1>
+<h3 id="互联网发展下的数据安全与隐私保护">互联网发展下的数据安全与隐私保护</h3>
+
+<h4 id="17307130056">17307130056</h4>
+
+<h4 id="沙泽阳">沙泽阳</h4>
 
 </section><section>
 
-<blockquote>
-<p>you can always count on me</p>
-</blockquote>
+
+
+<section data-shortcode-section>
+<h4 id="为什么互联网越发展-保护个人隐私数据的压力越来越严重">为什么互联网越发展，保护个人隐私数据的压力越来越严重</h4>
+
+</section><section>
+
+<h2 id="大数据的发展">大数据的发展</h2>
+
+<p><img src='大数据.jpeg' width='200px' height='150px'  ></p>
+
+<p>大数据的发展意味着人们以前觉得没有用的数据在如今强大的数据分析能力下成为了非常有价值，需要被保护的数据，也就意味着，和过去相比，我们需要保护的数据更多，因此数据保护的压力更大。</p>
+
+</section><section>
+
+<h2 id="云服务的普及">云服务的普及</h2>
+
+<p><img src='paper.jpg' width='200px' height='150px'>
+<img src='point.jpeg' width='50px'>
+<img src='computer.jpg' width='200px' height='150px'>
+<img src='point.jpeg' width='50px'>
+<img src='云服务.png' width='200px' height='150px'></p>
+
+<p>我们的数据，从过去写在纸上，到存到接入网络的电脑硬盘中，再到存到云服务上，我们逐渐失去对数据的掌握权（包括这次展示的ppt也是云端ppt的一次小尝试）</p>
+
+</section><section>
+
+<h2 id="更便捷高效的生活">更便捷高效的生活</h2>
+
+<p><img src='face.jpeg' width='200px' height='150px'></p>
+
+<p>从过去的手动输入密码到现在的人脸识别等等等等，人们享受这便捷的同时，注定意味着更不安全的访问方式。</p>
+
+</section>
+
+</section><section>
+
+<h3 id="过去我们是怎么保护我们的数据的-将来我们还要怎么保护才更有效">过去我们是怎么保护我们的数据的，将来我们还要怎么保护才更有效</h3>
+
+</section><section>
+
+
+
+<section data-shortcode-section>
+<h3 id="从密码说起">从密码说起</h3>
+
+</section><section>
+
+<h4 id="目前最常见的攻击密码的方式-撞库攻击">目前最常见的攻击密码的方式：撞库攻击</h4>
+
+<p>撞库攻击是指攻击者利用已泄漏的信息猜测用户的其他信息的攻击手段</p>
+
+</section><section>
+
+<h3 id="常见预防策略">常见预防策略：</h3>
+
+<p>1，存储密码时加盐哈希</p>
+
+<p>2，识别撞库行为（ip，用户交互行为）</p>
+
+</section><section>
+
+<h3 id="更广泛的密码-比如生物密码">更广泛的密码，比如生物密码</h3>
+
+<p><img src='attack_face.png'></p>
+
+</section><section>
+
+<h3 id="一旦存储生物密码的数据库泄露-将带来永久性的灾难">一旦存储生物密码的数据库泄露，将带来永久性的灾难</h3>
+
+</section><section>
+
+<h4 id="解决方案">解决方案</h4>
+
+<h5 id="思路一">思路一</h5>
+
+<p>对录入的生物数据进行hash存储，体现此思想的方案包括：可撤销生物模版，生物数据密钥
+<img src='hash_face.png'></p>
+
+</section><section>
+
+<h4 id="解决方案-1">解决方案</h4>
+
+<h5 id="思路二">思路二</h5>
+
+<p>对录入的生物信息进行隐藏和混淆，体现此思路的方案包括：指纹合成</p>
+
+<p><img src='mix_figure.png' height='400px'></p>
+
+</section>
+
+</section><section>
+
+
+
+<section data-shortcode-section>
+<h3 id="水印技术">水印技术</h3>
+
+</section><section>
+
+<h3 id="什么是水印">什么是水印：</h3>
+
+<p><img src='水印.png'></p>
+
+<p>保护版权，抵抗拷贝和魔改</p>
+
+</section><section>
+
+<h3 id="数字水印的类型">数字水印的类型</h3>
+
+<h4 id="针对文档">针对文档</h4>
+
+<p>明水印：明面，直接使用图像嵌入</p>
+
+<p>暗水印：</p>
+
+<p>1，pdf头文件（易攻击）</p>
+
+<p>2，微调行间距（难攻击）</p>
+
+</section><section>
+
+<h3 id="数字水印的类型-1">数字水印的类型</h3>
+
+<h4 id="针对图片的暗水印">针对图片的暗水印</h4>
+
+<p>1，空间域水印：</p>
+
+<p>选N个图像点：增加或降低其亮度</p>
+
+<p>2，变化域水印：</p>
+
+<p>随机选择图像的一些分块，在中频上改变三元组隐藏信息(需添加图片)</p>
+
+</section><section>
+
+<h3 id="数字水印前沿技术">数字水印前沿技术</h3>
+
+<p>可传递的数字水印</p>
+
+<p>基本思想：一个文件每一次经过一台新的机器，都会自动记录该机器的ip,mac等特征信息，加入到自己已有的水印中去，从而在取证阶段完成一整套的流程分析</p>
+
+</section><section>
+
+<h3 id="数字水印前沿技术-1">数字水印前沿技术</h3>
+
+<p>神经网络水印保护</p>
+
+<p><img src='deep_watermask.png'></p>
+
+</section>
+
+</section><section>
+
+<h2 id="感谢聆听">感谢聆听</h2>
 </section>
 
   
@@ -50,7 +206,7 @@
 </script>
 
 <script type="application/json" id="reveal-hugo-site-params">null</script>
-<script type="application/json" id="reveal-hugo-page-params">null</script>
+<script type="application/json" id="reveal-hugo-page-params">{"custom_css":"css/custom.css","custom_js":"js/custom.js","margin":0.2,"theme":"night"}</script>
 
 <script src="/reveal-js/js/reveal.js"></script>
 
@@ -96,7 +252,7 @@
   <script type="text/javascript" src="/reveal-js/plugin/notes/notes.js"></script>
 
 
-
+<script type="text/javascript" src="/js/custom.js"></script>
     
     
   </body>
